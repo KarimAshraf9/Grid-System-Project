@@ -1,0 +1,289 @@
+:root {
+  --bg-main: rgb(51, 51, 51);
+  --bg-sec: rgb(159, 163, 167);
+  --bg-link: rgb(39, 185, 194);
+  --bg-link2: rgb(255, 200, 10);
+}
+
+@font-face {
+  src: url("../Fonts/Arvo-Regular.ttf");
+  font-family: Arvo;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../Fonts/Arvo-Bold.ttf");
+  font-family: Arvo;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../Fonts/Montserrat-VariableFont_wght.ttf");
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../Fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-family: OpenSans;
+}
+
+main {
+  display: grid;
+  grid-auto-rows: 192.5px;
+  grid-template-areas:
+    "mobile mobile intro intro"
+    "mobile mobile intro intro"
+    "keyboard imac imac icloud"
+    "keyboard imac imac icloud"
+    "games best best icloud"
+    "games best best icloud"
+    "twitter popular vision vision";
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.intro {
+  grid-area: intro;
+  background-color: rgb(247, 248, 249);
+}
+
+.keyboard {
+  grid-area: keyboard;
+  background-color: rgb(240, 86, 56);
+}
+
+.imac {
+  grid-area: imac;
+}
+
+.icloud {
+  grid-area: icloud;
+  background-color: rgb(143, 118, 188);
+}
+
+.games {
+  grid-area: games;
+  background-color: rgb(247, 248, 249);
+}
+
+.best {
+  grid-area: best;
+  background-color: rgb(147, 182, 183);
+  background-image: url("../images/UX.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.twitter {
+  grid-area: twitter;
+  background-color: rgb(56, 213, 244);
+}
+
+.popular {
+  grid-area: popular;
+  background-color: rgb(247, 248, 249);
+}
+
+.vision {
+  grid-area: vision;
+  background-color: rgb(44, 44, 44);
+}
+
+h1 {
+  font-family: Arvo;
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--bg-main);
+  line-height: 60px;
+  width: 84%;
+}
+
+h2 {
+  font-family: Arvo;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--bg-main);
+  line-height: 32px;
+}
+
+p {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: var(--bg-sec);
+  line-height: 26px;
+}
+
+span.special-1 {
+  font-family: Montserrat;
+  font-size: 12px;
+  color: var(--bg-sec);
+  letter-spacing: 2px;
+}
+
+span.special-2 {
+  font-family: OpenSans;
+  font-size: 8px;
+}
+
+.icloud div span {
+  font-size: 10px;
+}
+
+.icloud figure + span {
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.popular .caps2 {
+  background-color: rgb(123, 196, 36);
+  padding: 0 10px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+main a {
+  font-family: OpenSans;
+  color: var(--bg-link);
+  letter-spacing: 2.4px;
+}
+
+.intro a {
+  letter-spacing: normal;
+}
+
+.keyboard a {
+  color: var(--bg-link2);
+}
+
+.keyboard img {
+  width: 100%;
+}
+
+.keyboard h2 {
+  width: 75%;
+}
+
+.games img {
+  width: 75%;
+  position: relative;
+  right: 8%;
+}
+
+.games h2 {
+  width: 50%;
+}
+
+.vision img {
+  width: 271px;
+  position: relative;
+  left: -40%;
+}
+
+.vision h2 {
+  width: 34%;
+}
+
+.mobile img {
+  width: 249px;
+}
+
+.mobile div {
+  width: 30%;
+}
+
+.imac div:nth-child(1) {
+  width: 30%;
+}
+
+.imac div:nth-child(2) {
+  width: 43%;
+}
+
+.imac img {
+  position: relative;
+  right: 150%;
+  width: 200%;
+  transform-origin: bottom left;
+  transform: scale(1.15);
+}
+
+.best .caps-1 {
+  background-color: rgb(250, 104, 79);
+  padding: 2px 10px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.best img {
+  position: relative;
+  right: 25%;
+  transform-origin: bottom left;
+  transform: scale(1.2);
+  margin-top: 48px;
+}
+
+.best h2 {
+  width: 50%;
+}
+
+.icloud p {
+  width: 65%;
+  margin: 10px 0 30px;
+}
+
+.icloud a {
+  padding: 14px 28px;
+  background-color: rgb(255, 200, 10);
+  border-radius: 50px;
+}
+
+.icloud figure img {
+  width: 65%;
+}
+
+.icloud div .special-2 {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  padding: 2px 10px 2px 5px;
+  border-radius: 60px;
+  letter-spacing: 2.4px;
+}
+
+.icloud div .special-2 img {
+  width: 12px;
+  margin: 5px;
+}
+
+.twitter h2 {
+  width: 50%;
+}
+
+.twitter::after {
+  content: "";
+  width: 192.5px;
+  height: 192.5px;
+  background-color: rgb(53, 207, 237);
+  position: absolute;
+  transform: scale(1.3);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.icloud div:nth-child(1)::after {
+  content: "";
+  width: 192.5px;
+  height: 192.5px;
+  background-color: rgb(129, 102, 176);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(1.8);
+}
